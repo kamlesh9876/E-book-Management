@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Management</title>
+  <link rel="stylesheet" href="Styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+  <h1>Book Management System</h1>
+
+  <!-- Book Form -->
+  <form id="book-form" enctype="multipart/form-data">
+    <label for="title">Book Title:</label>
+    <input type="text" name="title" id="title" placeholder="Enter book title" required />
+
+    <label for="author">Author:</label>
+    <input type="text" name="author" id="author" placeholder="Enter author name" required />
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date" placeholder="Enter publication date" required />
+
+    <label for="bookFile">Upload PDF:</label>
+    <input type="file" name="bookFile" id="bookFile" accept=".pdf" required />
+
+    <button type="submit">Add Book</button>
+  </form>
+
+  <!-- Success/Failure Message -->
+  <div id="message"></div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
